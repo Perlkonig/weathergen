@@ -6,7 +6,7 @@ Demo: <https://perlkonig.com/weather>
 
 ## Source
 
-The underlying algorithm is from Todd Leback's book [_Into the Wild_](https://preview.drivethrurpg.com/en/product/353949/Into-the-Wild), released under the terms of the Open Game License Version 1.0a. The algorithm is not designed to mimic real-life weather patterns
+The underlying algorithm is from Todd Leback's book [_Into the Wild_](https://preview.drivethrurpg.com/en/product/353949/Into-the-Wild), released under the terms of the Open Game License Version 1.0a. The algorithm is not designed to mimic real-life weather patterns but simply to provide a reasonable way to generate random weather, including special events, for RPG campaigns.
 
 ## Usage
 
