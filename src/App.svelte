@@ -4,6 +4,7 @@
     import View from "@/components/View.svelte";
     import Export from "@/components/Export.svelte";
     import About from "@/components/About.svelte";
+    import Footer from "./components/Footer.svelte";
 
     let activeTab: "start" | "calendar" | "export" | "about" = "start";
     events.subscribe((lst) => {
@@ -44,6 +45,8 @@
     {:else if activeTab === "about"}
         <About />
     {/if}
+
+    <Footer />
 </main>
 
 <style>
