@@ -231,9 +231,6 @@ export const genWeather = (
             (spec70Days > 0 && (overall === 2 || overall === 19))
         ) {
             const special = rng.nextInt(1, 100);
-            console.log(
-                `Overall: ${overall}, Spec70Days: ${spec70Days}, Special: ${special}`,
-            );
             if (special <= 20) {
                 let duration = rng.nextInt(1, 6);
                 if (rng.nextInt(1, 6) === 1) {
