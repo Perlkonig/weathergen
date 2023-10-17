@@ -231,6 +231,9 @@ export const genWeather = (
             (spec70Days > 0 && (overall === 2 || overall === 19))
         ) {
             const special = rng.nextInt(1, 100);
+            console.log(
+                `Overall: ${overall}, Spec70Days: ${spec70Days}, Special: ${special}`,
+            );
             if (special <= 20) {
                 let duration = rng.nextInt(1, 6);
                 if (rng.nextInt(1, 6) === 1) {
@@ -528,7 +531,7 @@ export const genWeather = (
                 events.push({
                     id: nanoid(),
                     allDay: true,
-                    title: `A comet appears that is visible only a night`,
+                    title: `A comet appears that is visible only at night`,
                     start,
                     end,
                     backgroundColor: "#800020",
@@ -1609,7 +1612,7 @@ export const genWeather = (
                 events.push({
                     id: nanoid(),
                     allDay: false,
-                    title: `A dense fog covers the land, greatly reducing visibility`,
+                    title: `A thin mist covers the land`,
                     start,
                     end,
                     backgroundColor: "#800020",

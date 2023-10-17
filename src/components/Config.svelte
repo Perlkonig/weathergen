@@ -1,18 +1,18 @@
 <script lang="ts">
     import { nanoid } from "nanoid";
     import { events } from "@/stores/writeEvents";
+    import { defaultDays } from "@/stores/writeDefaultDays";
     import { finalSeed } from "@/stores/writeFinalSeed";
     import { genWeather } from "@/lib";
     import { DateInput } from "date-picker-svelte";
 
     let seed = nanoid();
     let startDate = new Date(new Date().getFullYear(), 0, 1);
-    let numDays: number = 30;
     let climate: "arid" | "temperate" | "tropical" = "temperate";
 
     const handleGenerate = () => {
         $finalSeed = { seed, climate };
-        events.set(genWeather(seed, numDays, startDate, climate));
+        events.set(genWeather(seed, $defaultDays, startDate, climate));
     };
 </script>
 
@@ -70,7 +70,7 @@
                 class="input"
                 type="number"
                 name="numDays"
-                bind:value="{numDays}"
+                bind:value="{$defaultDays}"
                 min="1"
             />
         </div>

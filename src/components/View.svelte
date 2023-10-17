@@ -21,7 +21,7 @@
 
     let plugins = [TimeGrid, DayGrid, ListGrid];
     let options = {
-        view: "timeGridWeek",
+        view: "dayGridMonth",
         events: $events,
         date: earliest,
         headerToolbar: {
