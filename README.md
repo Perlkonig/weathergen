@@ -35,9 +35,9 @@ This generator disregards table 11, "Area of Weather," leaving it instead to the
 -   Special 56-60, "Strong winds," will never cause a reroll of the weather.
 -   Special 64-66, "Rain to hail," will never generate freak storms but will ensure the next generated rain storm is instead hail.
 -   Special 67, "Drastic shift in weather patterns," poses challenges when generating weather in batches. To have the effect persist, you need to remember your generator seed and continually generate days from the beginning.
--   Specials 70, 71, and 73 calculate and report recurrence periods, but future events are not created automatically. But special 70, effect 5, is indeed implemented (special events become more common while the comet is present).
--   Special 73, effect 5-6, assumes meteorites striking the earth is checked for each day of the shower.
--   Special 74 is a one-day, one-off event.
+-   Specials 70 and 71, "Comet," and 73, "Meteor shower," calculate and report recurrence periods, but future events are not created automatically. But special 70, effect 5, is indeed implemented (special events become more common while the comet is present).
+-   Special 73, "Meteor shower," effect 5-6, assumes meteorites striking the earth is checked for each day of the shower.
+-   Special 74, "Meteor shower," is a one-day, one-off event.
 -   Specials 77, 78, and 90 ("Solar eclipse" and "Rainbow") only occur between 9am and 5pm.
 -   Special 79, "Lunar eclipse," and special 91, "Aurora," only occur between 6pm and 8am. Lunar eclipses usually occur during a full moon. If you already have a lunar calendar, feel free to move the eclipse to the next full moon.
 -   Special 80, "Earthquake," is always scheduled for 15 minutes.
