@@ -8,6 +8,8 @@ Demo: <https://perlkonig.com/weather>
 
 The underlying algorithm is from Todd Leback's book [_Into the Wild_](https://preview.drivethrurpg.com/en/product/353949/Into-the-Wild), released under the terms of the Open Game License Version 1.0a. The algorithm is not designed to mimic real-life weather patterns but simply to provide a reasonable way to generate random weather, including special events, for RPG campaigns.
 
+The algorithm itself has no idea what month or season it is. It simply generates a stream of random days. Projecting that stream onto a calendar is done simply to provide a familiar interface. It is up to the GM to interpret the results based on the game world (e.g., in winter, "rain" becomes "snow").
+
 ## Usage
 
 Simply enter a number of days you want generated, and a calendar will be populated that includes general weather conditions and special events. You can change the starting date if you wish, otherwise it defaults to January 1st of the current year. Adjusting for season and non-Gregorian calendars is an exercise for the GM.

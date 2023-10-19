@@ -80,6 +80,7 @@
         <div class="control">
             <DateInput bind:value="{startDate}" format="yyyy-MM-dd" />
         </div>
+        <p class="help">This is purely cosmetic. The generator has no idea what month or season it is. See the About tab for details.</p>
     </div>
 
     <div class="control">
